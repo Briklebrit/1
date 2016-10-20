@@ -29,7 +29,7 @@
         <li>npm install grunt-svgstore --save-dev</li>
         <li>npm install load-grunt-tasks --save-dev</li>
       </ol>
-      <ol>
+      <ol><h2>package.json</h2>
         <li>В файле package.json должны прописаться все зависимости. Следующий вид:
 
         <pre>
@@ -211,10 +211,24 @@
               "imagemin"
             ]);
           };
-
         </pre>
       </li>
-
+      <li><h2>Добавление исключений GIT</h2>
+        Файл .gitignore имеет следующий вид:
+        <pre>
+          .DS_Store
+          .idea
+          *.ai
+          *.log
+          *.pdf
+          *.psd
+          *.sublime*
+          build/
+          css/*.css
+          node_modules/
+          Thumbs.db
+        </pre>
+      </li>
     </ol>
   </body>
 </html>
